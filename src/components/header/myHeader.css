@@ -1,0 +1,14 @@
+.header {
+    background: linear-gradient(90deg, #2773c9 0%, #e06822 100%);
+    border-radius: 10px;
+    padding: 2px;
+    display: flex;
+}
+
+.create-todo-btn {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: rgb(151, 191, 229);
+}
