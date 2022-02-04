@@ -9,6 +9,7 @@ const ListAndEditFields = () => {
             <div className={"todoList"}>
                 <SearchTodo/>
                 <List/>
+                <div id='drag'></div>
             </div>
             <div className={"edit-block"} >
                 <div className={"edit"} contentEditable={true}/>

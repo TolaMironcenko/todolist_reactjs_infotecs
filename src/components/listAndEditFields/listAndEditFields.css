@@ -12,11 +12,23 @@
     top: 0;
     bottom: 0;
     right: 70%;
+    /* width: 30%; */
     height: 630px;
+    /* background-color: black; */
     border-radius: 10px;
+    overflow: auto;
     margin: 2px;
     padding: 10px;
     background-color: rgb(201, 136, 146);
+}
+
+#drag {       
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 6px;
+    cursor: e-resize;
 }
 
 .edit-block {
