@@ -1,16 +1,14 @@
 import React from 'react';
 import "./listAndEditFields.css"
-import Note from "../note/note";
 import SearchTodo from "../searchTodo/searchTodo";
+import List from '../list/List';
 
 const ListAndEditFields = () => {
     return (
         <div className={"list-and-edit-fields"}>
             <div className={"todoList"}>
                 <SearchTodo/>
-                <div className={"list"}>
-                    <Note title={'hello'}/>
-                </div>
+                <List/>
             </div>
             <div className={"edit-block"} >
                 <div className={"edit"} contentEditable={true}/>

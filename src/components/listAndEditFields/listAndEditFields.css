@@ -19,10 +19,6 @@
     background-color: rgb(201, 136, 146);
 }
 
-.list {
-    overflow: auto;
-}
-
 .edit-block {
     position: absolute;
     right: 0;

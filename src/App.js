@@ -1,7 +1,7 @@
 import MyHeader from "./components/header/myHeader";
 import ListAndEditFields from "./components/listAndEditFields/listAndEditFields";
 
-function App() {
+const App = () => {
   return (
       <div className={"App"}>
         <MyHeader/>
