@@ -8,12 +8,12 @@ const searchTodo = (event) => {
     let list = document.querySelector('.list')
     const articles = document.querySelectorAll('.todo')
     var articlestexts = list.querySelectorAll('.todotext')
-  
+
     // Прокручиваем все элементы списка и скрываем те, которые не соответствуют поисковому запросу
     for (var i = 0; i < articles.length; i++) {
-      if (articlestexts[i].innerHTML.toLowerCase().indexOf(input) > -1) {
+    if (articlestexts[i].innerHTML.toLowerCase().indexOf(input) > -1) {
             articles[i].style.display = "";
-      } else {
+    } else {
             articles[i].style.display = "none";
         }
     }
@@ -22,7 +22,7 @@ const searchTodo = (event) => {
 const SearchTodo = () => {
     return (
         <div>
-            <input onKeyUp={searchTodo()} className={"search-input"} placeholder={"Имя заметки"}/>
+            <input className={"search-input"} placeholder={"Имя заметки"} onKeyUp={searchTodo}/>
         </div>
     );
 };
