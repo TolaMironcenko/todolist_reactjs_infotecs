@@ -18,9 +18,21 @@
     background-color: rgb(110, 80, 104);
 }
 
-.todotext {
+.todo-text {
     width: 50%;
     overflow: hidden;
     text-overflow: ellipsis;
     flex-wrap: nowrap;
+}
+
+.del-todo-btn {
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 15px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
 }
