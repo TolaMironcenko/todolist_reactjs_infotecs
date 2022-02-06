@@ -1,19 +1,16 @@
-import React from 'react';
+import EditField from './EditField/EditField';
+import { useRef } from "react";
 import "./listAndEditFields.css"
-import SearchTodo from "../searchTodo/searchTodo";
-import List from '../list/List';
+import TodoList from "./TodoList/TodoList";
 
-const ListAndEditFields = () => {
+const ListAndEditFields = (props) => {
+
+    const todoRef = useRef() 
+
     return (
         <div className={"list-and-edit-fields"}>
-            <div className={"todoList"}>
-                <SearchTodo/>
-                <List/>
-                <div id='drag'/>
-            </div>
-            <div className={"edit-block"} >
-                <div className={"edit"} contentEditable={true}/>
-            </div>
+            <TodoList todoList={props.todoList}/>
+            <EditField todoList={props.todoList} ref={todoRef}/>
         </div>
     );
 };

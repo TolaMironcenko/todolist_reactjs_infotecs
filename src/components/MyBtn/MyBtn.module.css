@@ -1,0 +1,8 @@
+.mtBtn {
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: rgb(151, 191, 229);
+}

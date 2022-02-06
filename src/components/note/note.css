@@ -1,5 +1,5 @@
 .todo {
-    width: 90%;
+    width: 100%;
     background-color: rgb(236, 149, 215);
     padding: 25px;
     cursor: pointer;
@@ -23,6 +23,14 @@
     overflow: hidden;
     text-overflow: ellipsis;
     flex-wrap: nowrap;
+}
+
+.todo.active-todo {
+    background-color: rgb(235, 173, 145);
+}
+
+.todo.active-todo:hover {
+    background-color: rgb(160, 120, 101);
 }
 
 .del-todo-btn {
