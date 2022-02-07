@@ -1,11 +1,11 @@
-import React, {useState} from "react";
+import React from "react";
 import MyHeader from "./components/header/myHeader";
 import ListAndEditFields from "./components/listAndEditFields/listAndEditFields";
 import './css/App.css'
 
 const App = () => {
 
-  const [todoList,setTodoList] = useState([])
+  let todoList = localStorage.getItem('todoList') == null ? [] : JSON.parse(localStorage.getItem('todoList'))
 
   // const addNewPost = () => {
 
@@ -13,7 +13,7 @@ const App = () => {
 
   return (
       <div className={"App"}>
-        <MyHeader setTodoList={setTodoList} todoList={todoList}/>
+        <MyHeader todoList={todoList}/>
         <ListAndEditFields todoList={todoList}/>
       </div>
   );

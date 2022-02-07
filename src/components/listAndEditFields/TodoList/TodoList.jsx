@@ -10,7 +10,7 @@ const TodoList = (props) => {
             <SearchTodo/>
             <div className="list">
                 {props.todoList.map(todo =>
-                            <Note todo={todo} key={todo.id}/>
+                            <Note todoList={props.todoList} todo={todo} key={todo.id}/>
                 )}
             </div>
             <div id='drag'/>
